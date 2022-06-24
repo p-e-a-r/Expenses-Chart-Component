@@ -1,0 +1,106 @@
+:root{
+  --cream: hsl(27, 66%, 92%);
+  --softRed: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --darkBrown: hsl(25, 47%, 15%);
+  --mediumBrown: hsl(28, 10%, 53%);
+  --veryPaleOrange: hsl(33, 100%, 98%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+font-family: 'DM Sans', 'sans-serif'; 
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: var(--cream);
+}
+
+
+.MyBalance{
+display: inline-flex;
+flex-wrap: wrap;
+gap: 300px;
+background-color: var(--softRed);
+border-radius: 20px;
+color: var(--cream);
+padding: 20px;
+margin-bottom: 1rem;
+}
+.BalanceHeading{
+  font-weight: 400;
+}
+.Balance{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.Spendings{
+display: flex;
+flex-direction: column;
+background-color: var(--veryPaleOrange);
+border-radius: 20px;
+padding: 2em;
+}
+.charts{
+  display: flex;
+  justify-content: space-between;
+}
+.chart{
+  display: flex;
+  flex-direction: column;
+  height: 12em;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-value:hover{
+  background-color: var(--cyan);
+  transition: 0.2s;
+}
+.chart-wrapper{
+  width: 2.5em;
+  display: flex;
+  align-items: flex-end;
+  height: 90%;
+}
+.chart-value{
+  background: var(--softRed);
+  width: 100%;
+  border-radius: 0.25em;
+}
+.chart-title{
+  color: var(--mediumBrown);
+  font-size: 0.8em;
+}
+
+hr{
+  height: 1px;
+  opacity: 50%;
+  background-color: var(--mediumBrown);
+  width: 100%;
+  border: none;
+  margin: 1em 0;
+}
+
+.ThisLastMonth{
+  color: var(--mediumBrown);
+}
+.Stats{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.rightStats{
+  text-align: right;
+padding-top: 15px;
+}
+p{
+  font-weight: bold;
+}
+
